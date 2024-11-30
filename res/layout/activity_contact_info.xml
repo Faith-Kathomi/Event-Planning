@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ContactInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bustani Gardens"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <!-- Image at the top -->
+        <ImageView
+            android:id="@+id/locationImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_image1" />
+
+        <!-- Vendor Name -->
+        <TextView
+            android:id="@+id/vendorNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/vendorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bustani Bookings"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Vendor Email -->
+        <TextView
+            android:id="@+id/vendorEmailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/vendorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="info@bustanigardens.com"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Vendor Phone -->
+        <TextView
+            android:id="@+id/vendorPhoneLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/vendorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+254722724684"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Location Link Section -->
+        <TextView
+            android:id="@+id/location_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Location"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:autoLink="web" />
+
+        <!-- Contact Vendor Button -->
+        <Button
+            android:id="@+id/contactVendorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Vendor"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/goToBillingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Billing"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/goToNaisholaGardenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Naishola Garden"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="start" />
+    </LinearLayout>
+</ScrollView>
