@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EventPlanner"
+rootProject.name = "EventListingApp"
 include(":app")
  
